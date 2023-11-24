@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
 
+
 <!--item name = nome apresentado in-game \\\\\\\\ identifier e o 'nome' para o objeto no nosso codigo \\\\\\ scale é o tamanho da imagem in-game-->
 
   <Item name="G3" identifier="G3" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.145" impactsoundtag="impact_metal_light">
