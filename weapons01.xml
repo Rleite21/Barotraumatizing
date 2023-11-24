@@ -2,6 +2,7 @@
 <Items>
     <!--  AUMENTAR TAMANHO DO ICONE DE INVENTARIO --> 
 
+
   <Item name="G3" identifier="G3" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.145" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
