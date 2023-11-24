@@ -1,5 +1,3 @@
 M4 Carbine:
--Sons
--Scale
--Textura do carregador
--Capacidade do carregador
+-Sons;
+-Icones da arma e carregador um bocado feios;
