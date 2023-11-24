@@ -1,3 +1,50 @@
 M4 Carbine:
 -Sons;
 -Icones da arma e carregador um bocado feios;
+-A arma tem demasiada 'força' (os tiros da m4 conseguem abrir rebentar o casco do submarino todo||| um bocado exagerado acho eu);
+
+
+Adições para o futuro:
+
+/////////////////////////////////////////// Extended Arsenal (novas armas): /////////////////////////////////////
+
+FirearmsM.xml:
+-M4 Carbine (x)
+-AK-47
+-G3
+-Famas F1
+-Toz-34 (ou alguma shotgun de caça parecida)
+-KAR-98
+-Thompson
+-MP-5
+
+FireamsS.xml:
+-M9 Beretta
+-Glock 17
+-Luger P08
+-Magnum 357
+-Tokarev 1933
+
+FireamsL.xml:
+-Boys Anti Tank Rifle
+-Chauchat
+-M240
+-RPK-47
+-Dragunov Sniper Rifle
+
+
+//////////////////////////////////// Extended Realism ////////////////////////////
+
+New "afflictions":
+
+-Hunger;
+-Stress;
+-Improved Radiation Mechanics
+
+
+////////////////////////////////    New objects  ////////////////
+
+Foods:
+
+(..........)
+
