@@ -1,5 +1,5 @@
 <contentpackage name="Barotraumatizing" path="LocalMods/Barotraumatizing/filelist.xml" modversion="1.0.0" gameversion="0.20.16.1" corepackage="false">
-    <Item file="%ModDir%/Barotraumatizing/Weapons01.xml"/>
-    <Item file="%ModDir%/Barotraumatizing/G3.xml"/>
-    
+    <Item file="%ModDir%/Weapons01.xml"/>
+    <Item file="%ModDir%/G3.xml"/>
+    <Item file="%ModDir%/firearmsM.xml"/>
 </contentpackage>
