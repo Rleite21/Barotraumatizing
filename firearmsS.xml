@@ -1,4 +1,4 @@
-
+<Items>
 <Item name="Glock 17" identifier="Glock17" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.095" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
