@@ -4,7 +4,7 @@
 
 <!--item name = nome apresentado in-game \\\\\\\\ identifier e o 'nome' para o objeto no nosso codigo \\\\\\ scale é o tamanho da imagem in-game-->
 
-  <Item name="G3" identifier="G3" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.145" impactsoundtag="impact_metal_light">
+  <Item name="M4" identifier="M4" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.145" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
@@ -30,8 +30,8 @@
     <!-- source erect = (x,y,largura da imagem, altura imagem)///// o source erect basicamenter recorta um retangulo no ponto (x,y) que vai ser a imagem in game-->
     <!-- a largura e altura do source erect TEM de ser um multiplo de 8 (senão o sistema de debug do Barotrauma pode dar o berro ou causar problemas de eficiencia)-->
 
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,878,214" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,883,209" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/M4 Carbine.png" sourcerect="0,0,512,256" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/M4 Carbine.png" sourcerect="0,0,512,256" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
 
     <!-- slots = com que mãos é segurado (se tiver RightHand+LeftHand", ent é segurado com as duas mãos obrigatoriamente)-->
@@ -59,18 +59,18 @@
         <Use />
       </StatusEffect>
       <!-- tens de referenciar o carregador da arma respetiva (todos os lugares onde está "G3magazine" tem de ser substituido pelo identificador do novo carregador)-->
-      <RequiredItems items="G3magazine" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="M4magazine" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
     <!--max stack size = nº de carregadores que podem ser carregados na arma (se por exemplo uma revolver de 6 balas, maxstacksize="6")-->
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="G3magazine" hide="false" itempos="4,-10" rotation="-30"/>
+      <Containable items="M4magazine" hide="false" itempos="4,-10" rotation="-30"/>
     </ItemContainer>  
   </Item>  
-
+  
     <!-- Definiçao de carregador -->
-   <Item name="G3 Magazine" identifier="G3magazine" maxstacksize="4" scale="0.145" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,G3ammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="G3" amount="1" spawnprobability="1"/>
+   <Item name="M4 Magazine" identifier="M4magazine" maxstacksize="4" scale="0.145" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,G3ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="M4" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2"/>
