@@ -17,8 +17,8 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/Glock 17.png" sourcerect="0,0,984,550" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons Assets/Textures/Glock 17.png" sourcerect="0,0,984,550" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/Glock 17.png" sourcerect="0,0,613,407" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/Glock 17.png" sourcerect="0,0,613,407" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="150,5" handle1="-100,-25" handle2="250,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.1" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
