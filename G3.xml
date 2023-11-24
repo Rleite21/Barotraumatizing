@@ -24,6 +24,9 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
 
+
+
+
     <!-- Imagens e sprites-->
     <!-- texture = "diretoria e nome do png", o png tem de estar na pasta dos mods para teste (%ModDir% === lugar onde estará o mod, independentemente se ele foi instalado em LocalMods ou na pasta do SteamWorkshop)-->
     <!-- Neste caso %ModDir% ==== Pasta de raiz do Barotraumatizing-->
