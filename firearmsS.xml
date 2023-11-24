@@ -45,7 +45,7 @@
   </Item>  
 
     <!-- Definiçao de carregador -->
-   <Item name="Glock 17 Magazine" identifier="Glock17Magazine" maxstacksize="4" scale="0.095" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,F1ammo" impactsoundtag="impact_metal_light">
+<Item name="Glock 17 Magazine" identifier="Glock17Magazine" maxstacksize="4" scale="0.095" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,F1ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="F1" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
