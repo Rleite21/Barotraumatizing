@@ -17,6 +17,10 @@ FirearmsM.xml:
 -KAR-98
 -Thompson
 -MP-5
+-FN Scar
+-Steyr AUG
+
+
 
 FireamsS.xml:
 -M9 Beretta
@@ -24,6 +28,9 @@ FireamsS.xml:
 -Luger P08
 -Magnum 357
 -Tokarev 1933
+-Colt M1911
+-Enfield revolver
+-Desert Eagle
 
 FireamsL.xml:
 -Boys Anti Tank Rifle
@@ -31,7 +38,7 @@ FireamsL.xml:
 -M240
 -RPK-47
 -Dragunov Sniper Rifle
-
+-RPG-7 (Rocket Propelled Grenade Laucher)
 
 //////////////////////////////////// Extended Realism ////////////////////////////
 
