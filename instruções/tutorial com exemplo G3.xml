@@ -9,8 +9,6 @@
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
     <PreferredContainer secondary="armcab,weaponholder"/>
 
-
-
   <!-- store identifier e base price sao so importantes para a campanha, irrelevante por agora (decidimos os preços e a disponibilidade dos produtos durante test)-->
   <!-- não mexer em nada aqui por agora!!!!-->
     <Price baseprice="450" minleveldifficulty="30">
