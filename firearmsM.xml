@@ -20,8 +20,8 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,878,214" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,883,209" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" origin="0.5,0.5" />
+    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-160,-10" handle2="500,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <!-- reload = 0.19-->
@@ -130,10 +130,10 @@
     </Deconstruct>
 
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,878,214" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,532,168" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" origin="0.5,0.5" />
+    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="550" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="-100,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.12" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -210,7 +210,7 @@
     <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" origin="0.5,0.5" />
     <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="570-5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="570,-5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.19" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="450,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -285,10 +285,10 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,550" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,550" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" origin="0.5,0.5" />
+    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="150,5" handle1="-100,-25" handle2="250,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="40,0" handle1="-120,-35" handle2="250,10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.1" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
