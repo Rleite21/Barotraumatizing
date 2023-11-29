@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+    <Affliction name="Hunger" identifier="hunger" description="The stomach's growling..." limbspecific="false" indicatorlimb="Torso" maxstrength="100" showiconthreshold="0" iconcolors="252,168,58,255;204,154,61,255;87,57,26,255">
+      <Effect minstrength="0" maxstrength="30" strengthchange="0.6" minvitalitydecrease="0" maxvitalitydecrease="0">
+        <StatusEffect target="Character" SpeedMultiplier="1" setvalue="true" />
+      </Effect>
+      <Effect minstrength="30" maxstrength="75" strengthchange="0.5" minvitalitydecrease="0" maxvitalitydecrease="0">
+        <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+      </Effect>
+      <Effect minstrength="75" maxstrength="90" strengthchange="0.5" minvitalitydecrease="0" maxvitalitydecrease="15" minchromaticaberration="0.0" maxchromaticaberration="5.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
+      </Effect>
+      <Effect minstrength="90" maxstrength="100" strengthchange="0.5" minvitalitydecrease="90" maxvitalitydecrease="1000" minchromaticaberration="10.0" maxchromaticaberration="10.0" minscreenblur="0.0" maxscreenblur="10.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.3" setvalue="true" />
+      </Effect>
+      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,200,200" color="10,193,114,255" origin="0,0" />
+    </Affliction>
+  
+
+  <Override>
+    <Affliction name="Food poisoning" identifier="foodpoisoning" description="Pain be gone." limbspecific="false" indicatorlimb="Torso" maxstrength="100" iconcolors="205,227,125,255;151,186,76,255;81,128,41,255">
+      <Effect minstrength="0" maxstrength="50" strengthchange="-0.2" minvitalitydecrease="0" maxvitalitydecrease="15">
+        <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true">
+          <Affliction identifier="nausea" amount="1.1" />
+          <Affliction identifier="hunger" strength="0.1" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="50" maxstrength="100" minvitalitydecrease="15" maxvitalitydecrease="35" minchromaticaberration="1.0" maxchromaticaberration="5.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
+          <Affliction identifier="nausea" amount="1.3" />
+          <Affliction identifier="hunger" strength="0.2" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,200,200" color="10,193,114,255" origin="0,0" />
+    </Affliction>
+  </Override>
+</Afflictions>
