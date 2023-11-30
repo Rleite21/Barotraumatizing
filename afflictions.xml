@@ -2,8 +2,8 @@
 <Afflictions>
   <Override>
     <Affliction name="Hunger" identifier="hunger" description="The stomach's growling..." limbspecific="false" indicatorlimb="Torso" maxstrength="100" showiconthreshold="25" iconcolors="252,168,58,255;204,154,61,255;87,57,26,255">
-      <Effect minstrength="0" maxstrength="33" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0"></Effect>
-      <Effect minstrength="30" maxstrength="60" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
+      <Effect minstrength="0" maxstrength="33" strengthchange="0.8" minvitalitydecrease="0" maxvitalitydecrease="0"></Effect>
+      <Effect minstrength="30" maxstrength="60" strengthchange="0.8" minvitalitydecrease="0" maxvitalitydecrease="0">
         <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
       </Effect>
       <Effect minstrength="75" maxstrength="95" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="25" minchromaticaberration="0.0" maxchromaticaberration="5.0">
