@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
   <Override>
-    <Affliction name="Hunger" identifier="hunger" description="The stomach's growling..." limbspecific="false" indicatorlimb="Torso" maxstrength="100" showiconthreshold="0" iconcolors="252,168,58,255;204,154,61,255;87,57,26,255">
-      <Effect minstrength="0" maxstrength="30" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
+    <Affliction name="Hunger" identifier="hunger" description="The stomach's growling..." limbspecific="false" indicatorlimb="" maxstrength="100" showiconthreshold="0" IconColors="255,255,255">
+      <Effect minstrength="0" maxstrength="45" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
       </Effect>
-      <Effect minstrength="30" maxstrength="75" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
+      <Effect minstrength="45" maxstrength="75" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
         <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
       </Effect>
       <Effect minstrength="75" maxstrength="95" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="25" minchromaticaberration="0.0" maxchromaticaberration="5.0">
@@ -13,7 +13,7 @@
       <Effect minstrength="95" maxstrength="100" strengthchange="0" minvitalitydecrease="50" maxvitalitydecrease="70" minchromaticaberration="10.0" maxchromaticaberration="10.0" minscreenblur="0.0" maxscreenblur="10.0">
         <StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true" />
       </Effect>
-      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,200,200" color="10,193,114,255" origin="0,0" />
+      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,480,480" origin="0,0"/>
     </Affliction>
   </Override>
 

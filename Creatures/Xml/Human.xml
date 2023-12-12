@@ -306,10 +306,10 @@
         <sprite name="Herpes" texture="Content/Characters/Human/Human_karma.png" sheetindex="0,0" />
       </Wearable>
     </HeadAttachments>
-    <!--Hunger ratio is made over 10 minutes, 600s x Ratio(0.04 this case)-->
+    
     <StatusEffect type="Always" target="This">
       <Conditional IsOnPlayerTeam="true" />
-      <Affliction identifier="hunger" amount="0.8" />
+      <Affliction identifier="hunger" amount="0.7" />
     </StatusEffect>
   </Character>
 </Override>
