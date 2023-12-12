@@ -2,4 +2,5 @@
     <Item file="%ModDir%/firearmsM.xml"/>
     <Item file="%ModDir%/firearmsS.xml"/>
     <Afflictions file="%ModDir%/Afflictions/afflictions.xml"/>
+    <Character file="%ModDir%/Creatures/Xml/Human.xml"/>
 </contentpackage>

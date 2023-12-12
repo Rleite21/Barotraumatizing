@@ -143,7 +143,7 @@
       <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
       <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="1.3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+        <Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <!--"Use" contained magazine to spawn projectiles.-->
       <StatusEffect type="OnUse" target="Contained">
@@ -221,7 +221,7 @@
       <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 4.ogg" type="OnUse" range="3000" selectionmode="Random" />  
       <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 5.ogg" type="OnUse" range="3000" selectionmode="Random" />    
       <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="1.3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+        <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <!--"Use" contained magazine to spawn projectiles.-->
       <StatusEffect type="OnUse" target="Contained">
@@ -298,7 +298,7 @@
       <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
       <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
       <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="1.3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+        <Explosion range="150.0" force="1.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
       <!--"Use" contained magazine to spawn projectiles.-->
       <StatusEffect type="OnUse" target="Contained">
