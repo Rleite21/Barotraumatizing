@@ -13,7 +13,7 @@
       <Effect minstrength="95" maxstrength="100" strengthchange="0" minvitalitydecrease="50" maxvitalitydecrease="70" minchromaticaberration="10.0" maxchromaticaberration="10.0" minscreenblur="0.0" maxscreenblur="10.0">
         <StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true" />
       </Effect>
-      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,480,480" origin="240,240"/>
+      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,480,480" origin="500,500"/>
     </Hunger>
 
     <Affliction name="Food poisoning" identifier="foodpoisoning" description="Must've eaten something rotten." limbspecific="false" indicatorlimb="Torso" maxstrength="100" iconcolors="205,227,125,255;151,186,76,255;81,128,41,255">
