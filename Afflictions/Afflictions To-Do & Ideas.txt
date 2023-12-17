@@ -1,0 +1,13 @@
+To-do:
+
+More Afflictions To Be Added Before Release:
+    -Affliction Hunger (DONE);
+    -Affliction Vitamin Defficiency (Causes fatigue, worsened vision if above 35);
+    -Affliction Scurvy (If Vitamin Defficiency > 65);
+    -Affliction Anemia (If Vitamin Defficiency > 85);
+    
+    
+    
+    
+More Afflictions To Be Added Later
+    -Stress
