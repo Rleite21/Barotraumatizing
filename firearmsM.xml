@@ -20,8 +20,8 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" origin="0.5,0.5" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-160,-10" handle2="500,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <!-- reload = 0.19-->
@@ -29,10 +29,10 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />      
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />      
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -63,8 +63,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3 Magazine.png" sourcerect="0,0,76,128" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/G3 Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3 Magazine.png" sourcerect="0,0,76,128" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3 Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="G3magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
@@ -130,18 +130,18 @@
     </Deconstruct>
 
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" origin="0.5,0.5" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="-100,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.12" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -172,8 +172,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74 Magazine.png" sourcerect="0,0,76,128" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/AK74 Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74 Magazine.png" sourcerect="0,0,76,128" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74 Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="AK74magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
@@ -207,19 +207,19 @@
       <Item identifier="plastic" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" origin="0.5,0.5" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="570,-5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.19" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="450,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 4.ogg" type="OnUse" range="3000" selectionmode="Random" />  
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 5.ogg" type="OnUse" range="3000" selectionmode="Random" />    
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 4.ogg" type="OnUse" range="3000" selectionmode="Random" />  
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 5.ogg" type="OnUse" range="3000" selectionmode="Random" />    
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -251,8 +251,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/Chauchat Magazine.png" sourcerect="0,0,216,86" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/Chauchat Magazine.png" depth="0.54" sourcerect="0,0,216,86" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat Magazine.png" sourcerect="0,0,216,86" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat Magazine.png" depth="0.54" sourcerect="0,0,216,86" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="Chauchatmagazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
@@ -287,18 +287,18 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" origin="0.5,0.5" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" origin="0.5,0.5" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="40,0" handle1="-120,-35" handle2="250,10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.1" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="LocalMods/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -330,8 +330,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1 Magazine.png" sourcerect="0,0,104,172" />
-    <Sprite texture="LocalMods/Barotraumatizing/Weapons Assets/Textures/F1 Magazine.png" depth="0.54" sourcerect="0,0,104,172" origin="0.5,0.5" />
+    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1 Magazine.png" sourcerect="0,0,104,172" />
+    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1 Magazine.png" depth="0.54" sourcerect="0,0,104,172" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="F1magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
