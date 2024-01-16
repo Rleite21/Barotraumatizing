@@ -18,7 +18,7 @@
         <SuitableTreatment type="hunger" suitability="10" />
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
-            <ReduceAffliction identifier="hunger" amount="50" />
+            <ReduceAffliction identifier="hunger" amount="45" />
         </StatusEffect>
 
         <StatusEffect type="OnUse" target="This">

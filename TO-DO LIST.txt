@@ -47,6 +47,18 @@ New "afflictions":
 ////////////////////////////////    New objects  ////////////////
 
 Foods:
-
+-Canned Vegetables (x)
+-Canned Peaches (x)
+-Canned Beans (x)
+-Alien Sausage (Texture ready)
+-Cookies 
+-Rice Crackers (Texture ready)
+-Combat Ration A
+-Combat Ration B
+-Canned SilverTuna
+-Banana
+-Orange
+-Protein Bar
+-Strawberry Jam
 (..........)
 
