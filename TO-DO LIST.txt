@@ -15,8 +15,6 @@ FirearmsM.xml:
 -FN Scar
 -Steyr AUG
 
-
-
 FireamsS.xml:
 -M9 Beretta
 -Glock 17 (x)
@@ -50,9 +48,9 @@ Foods:
 -Canned Vegetables (x)
 -Canned Peaches (x)
 -Canned Beans (x)
--Alien Sausage (Texture ready)
--Cookies 
--Rice Crackers (Texture ready)
+-Alien Sausage (x)
+-Rice Crackers (x)
+-Cookies
 -Combat Ration A
 -Combat Ration B
 -Canned SilverTuna
@@ -62,3 +60,9 @@ Foods:
 -Strawberry Jam
 (..........)
 
+////////////////////////////   SlaughterHouse Pack //////////////////////
+
+-Industrial Fridge (fazer a textura mais grainy para encaixar melhor in-game)
+-Butcher's Fridge (utilizar a textura Vanilla do "Freezer" que está na pasta Content\Map\Outposts\Art)
+-Oven
+-Butcher's Table
