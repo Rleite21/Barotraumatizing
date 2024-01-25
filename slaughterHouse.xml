@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- AVISO: ESTE ITEM TEM O ATRIBUTO SPRITE COLOR-->
+    
+  <Item name="Industrial Fridge" category="Miscellaneous" identifier="industrialFridge" spritecolor="172,172,172,255" tags="container" linkable="true" pickdistance="150" waterproof="true" scale="0.45">
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/industrialFridge.png" depth="0.84" sourcerect="0,0,268,364" origin="0.5,0.5" />
+    <ItemContainer capacity="35" slotsperrow="7" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.28,0.48" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem,food" excludedidentifiers="mobilecontainer" />
+      <SubContainer capacity="5" maxstacksize="1">
+        <SlotIcon texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+        <Containable items="mobilecontainer" />
+      </SubContainer>
+    </ItemContainer>
+    <!-- backwards compatibility for older versions in which mobile containers like storage containers were containable in any cabinet -->
+    <Upgrade gameversion="1.1.0.0" campaignsaveonly="true">
+      <ItemContainer>
+        <Containable items="smallitem,mediumitem,food" />
+        <ClearSubContainerRestrictions />
+      </ItemContainer>
+    </Upgrade>
+  </Item>
+
+</Items>

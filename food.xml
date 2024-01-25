@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
     
-    <Item  name="Baked Beans" identifier="bakedBeans" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,medical" description="A delicious simple meal" useinhealthinterface="true" scale="0.15">
+    <Item  name="Baked Beans" identifier="bakedBeans" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,food" description="Iconic beans from BEINZ" useinhealthinterface="true" scale="0.15">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
@@ -39,7 +39,7 @@
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
 
-    <Item  name="Canned Vegetables" identifier="cannedVegetables" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,medical" description="A delicious simple meal" useinhealthinterface="true" scale="0.1">
+    <Item  name="Canned Vegetables" identifier="cannedVegetables" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,food" description="An extremely bland 'meal'" useinhealthinterface="true" scale="0.1">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
@@ -77,7 +77,7 @@
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
  
-    <Item  name="Canned Peaches" identifier="cannedPeaches" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,medical" description="A delicious simple meal" useinhealthinterface="true" scale="0.1">
+    <Item  name="Canned Peaches" identifier="cannedPeaches" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,food" description="How do they grow these?" useinhealthinterface="true" scale="0.1">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
@@ -114,4 +114,81 @@
         <Sprite texture="%ModDir%/Supplies Assets/Food Textures/cannedPeaches.png" sourcerect="0,0,200,200" depth="0.6"/>
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
+
+    <Item  name="Alien Sausage" identifier="alienSausage" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,food" description="70% meat! We think" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="75" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <SuitableTreatment type="hunger" suitability="100" />
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+            <ReduceAffliction identifier="hunger" amount="60" />
+        </StatusEffect>
+
+        <StatusEffect type="OnUse" target="This">
+            <Remove/>
+        </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="medicalfabricator" requiredtime="15">
+            <RequiredSkill identifier="medical" level="20" />
+            <RequiredItem identifier="creepingorange" amount="3" />
+        </Fabricate>
+        <Deconstruct time="30">
+            <Item identifier="creepingorange" amount="2" />
+        </Deconstruct>
+   
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/alienSausage.png" sourcerect="0,0,260,80"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/alienSausage.png" sourcerect="0,0,260,80" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+    <Item  name="Rice Crackers" identifier="riceCrackers" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,food" description="Does anyone even like these?!" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="15" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <SuitableTreatment type="hunger" suitability="100" />
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+            <ReduceAffliction identifier="hunger" amount="15" />
+        </StatusEffect>
+
+        <StatusEffect type="OnUse" target="This">
+            <Remove/>
+        </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="medicalfabricator" requiredtime="15">
+            <RequiredSkill identifier="medical" level="20" />
+            <RequiredItem identifier="creepingorange" amount="3" />
+        </Fabricate>
+        <Deconstruct time="30">
+            <Item identifier="creepingorange" amount="2" />
+        </Deconstruct>
+   
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/riceCrackers.png" sourcerect="0,0,200,200"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/riceCrackers.png" sourcerect="0,0,200,200" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
 </Items>
