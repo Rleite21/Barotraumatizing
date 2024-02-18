@@ -178,10 +178,6 @@
         </StatusEffect>
         </MeleeWeapon>
 
-        <Fabricate suitablefabricators="medicalfabricator" requiredtime="15">
-            <RequiredSkill identifier="medical" level="20" />
-            <RequiredItem identifier="creepingorange" amount="3" />
-        </Fabricate>
         <Deconstruct time="30">
             <Item identifier="creepingorange" amount="2" />
         </Deconstruct>
@@ -190,5 +186,12 @@
         <Sprite texture="%ModDir%/Supplies Assets/Food Textures/riceCrackers.png" sourcerect="0,0,200,200" depth="0.6"/>
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
+
+
+
+
+
+
+
 
 </Items>
