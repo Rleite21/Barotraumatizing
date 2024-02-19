@@ -62,7 +62,27 @@ Foods:
 
 ////////////////////////////   SlaughterHouse Pack //////////////////////
 
--Industrial Fridge (fazer a textura mais grainy para encaixar melhor in-game)
+-Industrial Fridge (x)
 -Butcher's Fridge (utilizar a textura Vanilla do "Freezer" que está na pasta Content\Map\Outposts\Art)
 -Oven
--Butcher's Table
+-Butcher's Table (x)
+-Carcass Hoist
+-Meat Drier
+-Canning Machine
+-Hanging Cabinets
+
+/////////////////////////// Creatures Pack /////////////////////////////
+
+-Mudraptor Carcass
+-Mudraptor Meat
+-Mudraptor Hides
+-Crawler Carcass 
+-Crawler Ribs
+-Crawler Hides
+-Hammerhead Loin
+-Hammerhead Gold Dust (Golden Hammerhead drop)
+-Tigerthresher Armor
+-Tigerthresher Tooth
+-Fat
+-Ivory
+-Spines (Spinneling)
