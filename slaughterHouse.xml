@@ -87,17 +87,17 @@
   <Item
     name="Stove"
     identifier="stove" 
-    SpriteColor="255,255,255"
+    SpriteColor="180,180,180"
     tags="butcher,donttakeitems,dontsellitems"
     category="Machine"
 		linkable="true"
     allowedlinks="deconstructor,medcabinet,locker,toxcontainer"
-    scale="0.4"
+    scale="0.15"
     description="A must have for any kitchen"
     damagedbyexplosions="true"
     explosiondamagemultiplier="0.2">
     
-    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+    <Upgrade gameversion="0.10.0.0" scale="*0.15" />
     <Upgrade gameversion="0.10.4.0">
       <Repairable Msg="ItemMsgRepairWrench"/>
     </Upgrade>

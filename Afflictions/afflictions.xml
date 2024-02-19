@@ -7,8 +7,8 @@
       <Effect minstrength="45" maxstrength="75" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
         <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
       </Effect>
-      <Effect minstrength="75" maxstrength="95" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="25" minchromaticaberration="0.0" maxchromaticaberration="5.0">
-        <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
+      <Effect minstrength="75" maxstrength="95" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="15" minchromaticaberration="0.0" maxchromaticaberration="5.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true" />
       </Effect>
       <Effect minstrength="95" maxstrength="100" strengthchange="0" minvitalitydecrease="50" maxvitalitydecrease="70" minchromaticaberration="10.0" maxchromaticaberration="10.0" minscreenblur="0.0" maxscreenblur="10.0">
         <StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true" />
