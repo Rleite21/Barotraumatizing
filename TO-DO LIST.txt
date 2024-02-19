@@ -53,6 +53,8 @@ Foods:
 -Canned Beans (x)
 -Alien Sausage (x)
 -Rice Crackers (x)
+-Alien Stew
+-Potatoes
 -Cookies
 -Combat Ration A
 -Combat Ration B
