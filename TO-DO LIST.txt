@@ -67,7 +67,7 @@ Foods:
 
 -Industrial Fridge (x)
 -Butcher's Fridge (utilizar a textura Vanilla do "Freezer" que está na pasta Content\Map\Outposts\Art)
--Oven
+-Stove
 -Butcher's Table (x)
 -Carcass Hoist
 -Larger Carcass Holder
@@ -77,15 +77,15 @@ Foods:
 
 /////////////////////////// Alien Drops /////////////////////////////
 
--Mudraptor Carcass
--Mudraptor Meat
--Mudraptor Hides
--Crawler Carcass 
--Crawler Ribs
--Crawler Hides
+-Mudraptor Carcass 
+-Mudraptor Ribs 
+-Mudraptor Hides 
+-Crawler Carcass (x)
+-Crawler Ribs (x)
+-Crawler Hides (x)
 -Hammerhead Loin
 -Hammerhead Gold Dust (Golden Hammerhead drop)
--Tigerthresher Armor
+-Tigerthresher Armor 
 -Tigerthresher Tooth
 -Fat
 -Ivory
