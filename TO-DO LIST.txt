@@ -38,6 +38,9 @@ FireamsL.xml:
 New "afflictions":
 
 -Hunger; (x)
+-Vitamin Defficiency
+-Scurvy
+-Anemia
 -Stress;
 -Improved Radiation Mechanics
 
@@ -67,11 +70,12 @@ Foods:
 -Oven
 -Butcher's Table (x)
 -Carcass Hoist
+-Larger Carcass Holder
 -Meat Drier
 -Canning Machine
 -Hanging Cabinets
 
-/////////////////////////// Creatures Pack /////////////////////////////
+/////////////////////////// Alien Drops /////////////////////////////
 
 -Mudraptor Carcass
 -Mudraptor Meat
