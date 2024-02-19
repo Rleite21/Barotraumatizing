@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-    <Item  name="Crawler Carcass" identifier="crawlerCarcass" category="Alien" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="carcass" description="Gross ass thing" useinhealthinterface="true" scale="0.4">
-        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+    <Item  name="Crawler Carcass" identifier="crawlerCarcass" category="Alien" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="carcass" description="Gross ass thing" useinhealthinterface="true" scale="0.38">
+        <PreferredContainer primary="medcab" minamount="1" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
         <PreferredContainer secondary="medcontainer"/>
 
-        <Price baseprice="250" minavailable="4">
+        <Price baseprice="250" minavailable="1">
             <Price storeidentifier="merchantoutpost" sold="true" />
             <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
             <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
@@ -14,7 +14,7 @@
             <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
         </Price>
 
-        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="RightHand+LeftHand" aimpos="40,5" handle1="10,0" handle2="-10,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="10,0" handle2="-10,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
         <InventoryIcon texture="%ModDir%/Creatures/Crawler/crawlerCarcass.png" sourcerect="0,0,468,260"/>
         <Sprite texture="%ModDir%/Creatures/Crawler/crawlerCarcass.png" sourcerect="0,0,468,260" depth="0.6" origin="0.5,0.5"/>
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
