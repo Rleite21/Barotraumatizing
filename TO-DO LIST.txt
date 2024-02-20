@@ -68,7 +68,7 @@ Foods:
 
 ////////////////////////////   SlaughterHouse Pack //////////////////////
 
--Industrial Fridge (x)
+-Industrial Freezer (x)
 -Butcher's Fridge (utilizar a textura Vanilla do "Freezer" que está na pasta Content\Map\Outposts\Art)
 -Stove (x)
 -Butcher's Table (x)
