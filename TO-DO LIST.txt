@@ -53,8 +53,8 @@ Foods:
 -Canned Beans (x)
 -Alien Sausage (x)
 -Rice Crackers (x)
--Alien Stew
--Potatoes
+-Pot of Alien Stew (!!resize sprite!!)
+-Potatoes (x)
 -Cookies
 -Combat Ration A
 -Combat Ration B
@@ -63,15 +63,16 @@ Foods:
 -Orange
 -Protein Bar
 -Strawberry Jam
+-Alien Meat
 (..........)
 
 ////////////////////////////   SlaughterHouse Pack //////////////////////
 
 -Industrial Fridge (x)
 -Butcher's Fridge (utilizar a textura Vanilla do "Freezer" que está na pasta Content\Map\Outposts\Art)
--Stove
+-Stove (x)
 -Butcher's Table (x)
--Carcass Hoist
+-Carcass Hoist (x)
 -Larger Carcass Holder
 -Meat Drier
 -Canning Machine
@@ -89,6 +90,6 @@ Foods:
 -Hammerhead Gold Dust (Golden Hammerhead drop)
 -Tigerthresher Armor 
 -Tigerthresher Tooth
--Fat
+-Fat (x)
 -Ivory
 -Spines (Spinneling)

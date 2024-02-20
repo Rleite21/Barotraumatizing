@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Barotraumatizing" modversion="0.1.3" corepackage="False" gameversion="1.2.8.0">
+<contentpackage name="Barotraumatizing" modversion="0.1.5" corepackage="False" gameversion="1.2.8.0">
   <Afflictions file="%ModDir%/Afflictions/afflictions.xml" />
   <Item file="%ModDir%/firearmsM.xml" />
   <Item file="%ModDir%/firearmsS.xml" />

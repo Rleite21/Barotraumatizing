@@ -196,12 +196,12 @@
         </Price>
 
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
-        <InventoryIcon texture="%ModDir%/temp.png" sourcerect="0,0,2048,2048"/>
-        <Sprite texture="%ModDir%/temp.png" sourcerect="0,0,2048,2048" depth="0.6"/>
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/sack.png" sourcerect="0,0,400,500"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/sack.png" sourcerect="0,0,400,500" depth="0.6"/>
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />     
     </Item>
 
-    <Item  name="Alien Stew" identifier="stew" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Does anyone even like these?!" useinhealthinterface="true" scale="0.1">
+    <Item  name="Pot of Alien Stew" identifier="stew" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Does anyone even like these?!" useinhealthinterface="true" scale="0.1">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />

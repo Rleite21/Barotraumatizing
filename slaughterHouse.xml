@@ -21,6 +21,22 @@
     </Upgrade>
   </Item>
 
+  <Item name="Carcass Hoist" category="Miscellaneous" identifier="carcassHoist" spritecolor="255,255,255,255" tags="container,carcass" linkable="true" pickdistance="150" waterproof="true" scale="0.55">
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/carcassHoist.png" depth="0.84" sourcerect="0,0,350,350" origin="0.5,0.5" />
+    <ItemContainer capacity="1" slotsperrow="1" canbeselected="true" hideitems="false" itempos="240,-180" iteminterval="0,0" itemrotation="-95" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.25" anchor="Center" style="ItemUI" />
+      <Containable items="carcass" excludedidentifiers="mobilecontainer" />
+       
+    </ItemContainer>
+    <!-- backwards compatibility for older versions in which mobile containers like storage containers were containable in any cabinet -->
+    <Upgrade gameversion="1.1.0.0" campaignsaveonly="true">
+      <ItemContainer>
+        <Containable items="carcass" />
+      </ItemContainer>
+    </Upgrade>
+  </Item>
+
+
   <Item
     name="Butcher's Table"
     identifier="butcherTable" 
