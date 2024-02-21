@@ -38,9 +38,10 @@ FireamsL.xml:
 New "afflictions":
 
 -Hunger; (x)
--Vitamin Defficiency
+-Vitamin Defficiency 
 -Scurvy
 -Anemia
+-Joint Pain
 -Stress;
 -Improved Radiation Mechanics
 
@@ -54,6 +55,7 @@ Foods:
 -Alien Sausage (x)
 -Rice Crackers (x)
 -Pot of Alien Stew (!!resize sprite!!)
+-Alien Meat
 -Potatoes (x)
 -Cookies
 -Combat Ration A
@@ -63,7 +65,7 @@ Foods:
 -Orange
 -Protein Bar
 -Strawberry Jam
--Alien Meat
+
 (..........)
 
 ////////////////////////////   SlaughterHouse Pack //////////////////////
@@ -81,12 +83,14 @@ Foods:
 /////////////////////////// Alien Drops /////////////////////////////
 
 -Mudraptor Carcass 
--Mudraptor Ribs 
+-Mudraptor Loin
+-Mudraptor Leg
 -Mudraptor Hides 
 -Crawler Carcass (x)
 -Crawler Ribs (x)
 -Crawler Hides (x)
--Hammerhead Loin
+-Alien Meat
+-Hammerhead Calvaria 
 -Hammerhead Gold Dust (Golden Hammerhead drop)
 -Tigerthresher Armor 
 -Tigerthresher Tooth

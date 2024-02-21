@@ -230,13 +230,19 @@
         </MeleeWeapon>
 
         <Fabricate suitablefabricators="stove" requiredtime="20">     
-            <RequiredItem identifier="alienMeat" amount="1" />
+            <RequiredItem identifier="crawlerRibs" amount="1" />
+            <RequiredItem identifier="bakedBeans" amount="1" />
+            <RequiredItem identifier="potatoes" amount="2" />
+        </Fabricate>
+
+        <Fabricate suitablefabricators="stove" requiredtime="20">     
+            <RequiredItem identifier="mudraptorLoin" amount="1" />
             <RequiredItem identifier="bakedBeans" amount="1" />
             <RequiredItem identifier="potatoes" amount="2" />
         </Fabricate>
     </Item>
 
-    <Item  name="Grilled Meat" identifier="grilledMeat" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Does anyone even like these?!" useinhealthinterface="true" scale="0.1">
+    <Item  name="Grilled Mudraptor" identifier="grilledMeat" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Does anyone even like these?!" useinhealthinterface="true" scale="0.1">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
@@ -257,18 +263,15 @@
             <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
             <SuitableTreatment type="hunger" suitability="100" />       
             <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
-                <ReduceAffliction identifier="hunger" amount="60" />
+                <ReduceAffliction identifier="hunger" amount="70" />
                 </StatusEffect>
             <StatusEffect type="OnUse" target="This">
                 <Remove/>
             </StatusEffect>
         </MeleeWeapon>
 
-        
-
-
         <Fabricate suitablefabricators="stove" requiredtime="20">     
-            <RequiredItem identifier="alienMeat" amount="1" />           
+            <RequiredItem identifier="mudraptorLoin" amount="1" />           
         </Fabricate>
     </Item>
 
