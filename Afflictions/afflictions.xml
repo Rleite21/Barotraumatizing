@@ -74,5 +74,17 @@
       <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,200,200" color="10,193,114,255" origin="0,0" />
     </Affliction>
 
+     <Affliction name="Anemia" identifier="anemia" description="Feeling increasingly tired and weak" limbspecific="false" indicatorlimb="torso" maxstrength="100" iconcolors="205,227,125,255;151,186,76,255;81,128,41,255">
+      <Effect minstrength="0" maxstrength="50" strengthchange="-0.7" minvitalitydecrease="0" maxvitalitydecrease="35">
+        <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"> </StatusEffect>
+      </Effect>
+      <Effect minstrength="75" maxstrength="100" minvitalitydecrease="20" maxvitalitydecrease="45" minchromaticaberration="1.0" maxchromaticaberration="5.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true"> </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,200,200" color="10,193,114,255" origin="0,0" />
+    </Affliction>
 
+
+
+    
 </Afflictions>
