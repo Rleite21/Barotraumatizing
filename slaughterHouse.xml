@@ -22,7 +22,7 @@
   </Item>
 
   <Item name="Carcass Hoist" category="Miscellaneous" identifier="carcassHoist" spritecolor="255,255,255,255" tags="container,carcass" linkable="true" pickdistance="150" waterproof="true" scale="0.55">
-    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/carcassHoist.png" depth="0.84" sourcerect="0,0,350,350" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/carcassHoist.png" depth="0.84" sourcerect="0,0,348,348" origin="0.5,0.5" />
     <ItemContainer capacity="1" slotsperrow="1" canbeselected="true" hideitems="false" itempos="240,-180" iteminterval="0,0" itemrotation="-95" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.25,0.25" anchor="Center" style="ItemUI" />
       <Containable items="carcass" excludedidentifiers="mobilecontainer" />
@@ -40,7 +40,7 @@
   <Item
     name="Butcher's Table"
     identifier="butcherTable" 
-    SpriteColor="155,155,155"
+    SpriteColor="150,150,150"
     tags="butcher,donttakeitems,dontsellitems"
     category="Machine"
 		linkable="true"
@@ -56,7 +56,7 @@
     </Upgrade>
 
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/butcherTable.png" depth="0.8" sourcerect="0,0,462,204" origin="0.5,0.5"/>
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/butcherTable.png" depth="0.8" sourcerect="0,0,464,204" origin="0.5,0.5"/>
     <!-- BrokenSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" sourcerect="336,0,336,288" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" /> !-->
 
     <Fabricator canbeselected = "true" powerconsumption="0" msg="ItemMsgInteractSelect">
@@ -119,7 +119,7 @@
     </Upgrade>
 
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/stove.png" depth="0.8" sourcerect="0,0,502,582" origin="0.5,0.5"/>
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/stove.png" depth="0.8" sourcerect="0,0,504,584" origin="0.5,0.5"/>
     <!-- BrokenSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" sourcerect="336,0,336,288" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" /> !-->
 
     <Fabricator canbeselected = "true" powerconsumption="15" msg="ItemMsgInteractSelect">

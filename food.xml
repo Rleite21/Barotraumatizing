@@ -140,7 +140,8 @@
         </MeleeWeapon>
 
         <Fabricate suitablefabricators="butcherTable" requiredtime="10">     
-            <RequiredItem identifier="alienMeat" amount="2" />
+            <RequiredItem identifier="crawlerRibs" amount="1" />
+            <RequiredItem identifier="fat" amount="1" />
         </Fabricate>
    
         <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/alienSausage.png" sourcerect="0,0,260,80"/>
@@ -181,7 +182,7 @@
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
 
-    <Item  name="Bag of Potatotes" identifier="potatoes" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Does anyone even like these?!" useinhealthinterface="true" scale="0.1">
+    <Item  name="Bag of Potatotes" identifier="potatoes" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="A bag of the most peasant-y vegetables" useinhealthinterface="true" scale="0.1">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
