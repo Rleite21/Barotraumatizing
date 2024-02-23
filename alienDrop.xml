@@ -27,7 +27,7 @@
         </Deconstruct>
     </Item>
 
-    <Item  name="Crawler Ribs" identifier="crawlerRibs" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien" description="Raw ribs ready for barbecue" scale="0.3">
+    <Item  name="Crawler Ribs" identifier="crawlerRibs" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien,smallitem,food" description="Raw ribs ready for barbecue" scale="0.3">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />

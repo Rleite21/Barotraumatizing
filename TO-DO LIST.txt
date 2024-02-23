@@ -54,7 +54,6 @@ Foods:
 -Alien Sausage (x)
 -Rice Crackers (x)
 -Pot of Alien Stew (!!resize sprite!!)
--Alien Meat
 -Potatoes (x)
 -Cookies
 -Combat Ration A
@@ -88,7 +87,6 @@ Foods:
 -Crawler Carcass (x)
 -Crawler Ribs (x)
 -Crawler Hides (x)
--Alien Meat
 -Hammerhead Calvaria 
 -Hammerhead Gold Dust (Golden Hammerhead drop)
 -Tigerthresher Armor 
