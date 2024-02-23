@@ -96,7 +96,7 @@
 
     
     
-    <Item  name="Mudraptor Carcass" identifier="mudraptorCarcass" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Iconic beans from BEINZ" useinhealthinterface="true" scale="0.15">
+    <Item  name="Mudraptor Carcass" identifier="mudraptorCarcass" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="carcass" description="WARNING: Keep away from vegetarians" useinhealthinterface="true" scale="0.18">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
@@ -124,7 +124,7 @@
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
 
-    <Item  name="Mudraptor Loin" identifier="mudraptorLoin" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien" description="Awful looking but amongst the most succulent meats in Europa" scale="0.3">
+    <Item  name="Mudraptor Loin" identifier="mudraptorLoin" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien" description="Awful looking but amongst the most succulent meats in Europa" scale="0.18">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
@@ -152,7 +152,7 @@
         </MeleeWeapon>
     </Item>
 
-    <Item  name="Mudraptor Leg" identifier="mudraptorLeg" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien" description="Raw ribs ready for barbecue" scale="0.3">
+    <Item  name="Mudraptor Leg" identifier="mudraptorLeg" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien" description="A lil leggie" scale="0.18">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />

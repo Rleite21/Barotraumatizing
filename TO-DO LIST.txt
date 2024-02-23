@@ -55,6 +55,8 @@ Foods:
 -Rice Crackers (x)
 -Pot of Alien Stew (!!resize sprite!!)
 -Potatoes (x)
+-Grilled Mudraptor
+-Crawler Barbecue Ribs
 -Cookies
 -Combat Ration A
 -Combat Ration B
@@ -80,9 +82,9 @@ Foods:
 
 /////////////////////////// Alien Drops /////////////////////////////
 
--Mudraptor Carcass 
--Mudraptor Loin
--Mudraptor Leg
+-Mudraptor Carcass (x)
+-Mudraptor Loin (x)
+-Mudraptor Leg (x)
 -Mudraptor Hides 
 -Crawler Carcass (x)
 -Crawler Ribs (x)
