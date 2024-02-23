@@ -138,8 +138,8 @@
             <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
         </Price>
 
-        <InventoryIcon texture="%ModDir%/temp.png" sourcerect="0,0,2048,2048"/>
-        <Sprite texture="%ModDir%/temp.png" sourcerect="0,0,2048,2048" depth="0.6"/>
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLoin.png" sourcerect="0,0,400,180"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLoin.png" sourcerect="0,0,400,180" depth="0.6"/>
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
         
         

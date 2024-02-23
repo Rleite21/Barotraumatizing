@@ -309,8 +309,8 @@
     
     <StatusEffect type="Always" target="This">
       <Conditional IsOnPlayerTeam="true" />
-      <Affliction identifier="hunger" amount="0.5" />
-      <Affliction identifier="vitaminDefficiency" amount="0.1" />
+      <Affliction identifier="hunger" amount="0.4" />
+      <Affliction identifier="vitaminDefficiency" amount="0.3" />
     </StatusEffect>
   </Character>
 </Override>

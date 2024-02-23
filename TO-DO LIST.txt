@@ -38,10 +38,9 @@ FireamsL.xml:
 New "afflictions":
 
 -Hunger; (x)
--Vitamin Defficiency 
--Scurvy
+-Vitamin Defficiency (x)
+-Scurvy (x)
 -Anemia
--Joint Pain
 -Stress;
 -Improved Radiation Mechanics
 
