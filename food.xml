@@ -19,6 +19,7 @@
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
             <ReduceAffliction identifier="hunger" amount="45" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="25" />
         </StatusEffect>
 
         <StatusEffect type="OnUse" target="This">
@@ -57,6 +58,7 @@
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
             <ReduceAffliction identifier="hunger" amount="35" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="40" />
         </StatusEffect>
 
         <StatusEffect type="OnUse" target="This">
@@ -95,6 +97,7 @@
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
             <ReduceAffliction identifier="hunger" amount="30" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="70" />
         </StatusEffect>
 
         <StatusEffect type="OnUse" target="This">
@@ -133,6 +136,7 @@
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
             <ReduceAffliction identifier="hunger" amount="60" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="10" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
             <Remove/>
@@ -167,6 +171,7 @@
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
             <ReduceAffliction identifier="hunger" amount="15" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="5" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This">
             <Remove/>
@@ -224,6 +229,7 @@
             <SuitableTreatment type="hunger" suitability="100" />    
             <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
                 <ReduceAffliction identifier="hunger" amount="100" />
+                <ReduceAffliction identifier="vitaminDefficiency" amount="50" />
                 </StatusEffect>
             <StatusEffect type="OnUse" target="This">
                 <Remove/>
@@ -298,6 +304,7 @@
             <SuitableTreatment type="hunger" suitability="100" />       
             <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
                 <ReduceAffliction identifier="hunger" amount="70" />
+                <ReduceAffliction identifier="vitaminDefficiency" amount="20" />
                 </StatusEffect>
             <StatusEffect type="OnUse" target="This">
                 <Remove/>

@@ -79,6 +79,7 @@ Foods:
 -Meat Drier
 -Canning Machine
 -Hanging Cabinets
+-Microwaves
 
 /////////////////////////// Alien Drops /////////////////////////////
 
