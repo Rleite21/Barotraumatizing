@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Barotraumatizing" modversion="0.1.6" corepackage="False" gameversion="1.2.8.0">
+<contentpackage name="Barotraumatizing" modversion="0.1.1" corepackage="False" gameversion="1.2.8.0">
   <Afflictions file="%ModDir%/Afflictions/afflictions.xml" />
   <Item file="%ModDir%/firearmsM.xml" />
   <Item file="%ModDir%/firearmsS.xml" />
@@ -12,4 +12,5 @@
   <Character file="%ModDir%/Creatures/Hammerhead/Hammerhead.xml" />
   <Character file="%ModDir%/Creatures/Tigerthresher/Tigerthresher.xml" />
   <Submarine file="%ModDir%/Dugong (BAROTRAUMATIZING).sub" />
+  <Submarine file="%ModDir%/Barracuda.sub" />
 </contentpackage>

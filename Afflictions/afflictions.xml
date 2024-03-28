@@ -49,16 +49,16 @@
     </Affliction>
 
     <Affliction name="Scurvy" identifier="scurvy" description="Bloody gums... Eat an orange, quick!" limbspecific="false" indicatorlimb="Head" maxstrength="100" showiconthreshold="15">
-      <Effect minstrength="0" maxstrength="30" strengthchange="1.0" minvitalitydecrease="0" maxvitalitydecrease="5"> </Effect>
-      <Effect minstrength="30" maxstrength="50" strengthchange="0.5" minvitalitydecrease="1" maxvitalitydecrease="10">
+      <Effect minstrength="0" maxstrength="30" strengthchange="-0.4" minvitalitydecrease="0" maxvitalitydecrease="5">  </Effect>
+      <Effect minstrength="30" maxstrength="50" strengthchange="-0.5" minvitalitydecrease="1" maxvitalitydecrease="10">
         <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"> </StatusEffect>
       </Effect>
-      <Effect minstrength="50" maxstrength="80" strengthchange="0.7" minvitalitydecrease="2" maxvitalitydecrease="15">
-        <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true">
-          <Affliction identifier="bleeding" strength="0.4" />
+      <Effect minstrength="50" maxstrength="80" strengthchange="-0.7" minvitalitydecrease="2" maxvitalitydecrease="15">
+        <StatusEffect target="Character" targetlimbs="Head" SpeedMultiplier="0.8" setvalue="true">
+          <Affliction identifier="bleeding" strength="0.4"/>
         </StatusEffect>
       </Effect>
-      <Effect minstrength="80" maxstrength="100" strengthchange="0.35"  minvitalitydecrease="5" maxvitalitydecrease="20" minchromaticaberration="1.0" maxchromaticaberration="5.0">
+      <Effect minstrength="80" maxstrength="100" strengthchange="0.1"  minvitalitydecrease="5" maxvitalitydecrease="20" minchromaticaberration="1.0" maxchromaticaberration="5.0">
         <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
           <Affliction identifier="bleeding" targetlimb="Head" strength="10" />
         </StatusEffect>
@@ -70,7 +70,7 @@
       <Effect minstrength="0" maxstrength="75" strengthchange="-0.7" minvitalitydecrease="0" maxvitalitydecrease="35">
         <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"> </StatusEffect>
       </Effect>
-      <Effect minstrength="75" maxstrength="100" minvitalitydecrease="20" maxvitalitydecrease="45" minchromaticaberration="1.0" maxchromaticaberration="5.0">
+      <Effect minstrength="75" maxstrength="100" strengthchange="-0.4" minvitalitydecrease="20" maxvitalitydecrease="45" minchromaticaberration="1.0" maxchromaticaberration="5.0">
         <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true"> </StatusEffect>
       </Effect>
       <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,480,480" origin="500,500"/>

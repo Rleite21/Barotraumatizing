@@ -53,12 +53,13 @@ Foods:
 -Canned Beans (x)
 -Alien Sausage (x)
 -Rice Crackers (x)
--Pot of Alien Stew (!!resize sprite!!)
+-Pot of Alien Stew (x)
 -Potatoes (x)
--Cookies
--Combat Ration A
--Combat Ration B
--Canned SilverTuna
+-Grilled Mudraptor (x)
+-Crawler Barbecue Ribs (x)
+-Lucky Cookie (x)
+-Canned SilverTuna (x)
+-Combat Ration (x)
 -Banana
 -Orange
 -Protein Bar
@@ -77,12 +78,13 @@ Foods:
 -Meat Drier
 -Canning Machine
 -Hanging Cabinets
+-Microwaves
 
 /////////////////////////// Alien Drops /////////////////////////////
 
--Mudraptor Carcass 
--Mudraptor Loin
--Mudraptor Leg
+-Mudraptor Carcass (x)
+-Mudraptor Loin (x)
+-Mudraptor Leg (x)
 -Mudraptor Hides 
 -Crawler Carcass (x)
 -Crawler Ribs (x)
@@ -92,5 +94,4 @@ Foods:
 -Tigerthresher Armor 
 -Tigerthresher Tooth
 -Fat (x)
--Ivory
 -Spines (Spinneling)
