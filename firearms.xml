@@ -7,7 +7,7 @@
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
     <PreferredContainer secondary="armcab,weaponholder"/>
-    <Price baseprice="450" minleveldifficulty="30">
+    <Price baseprice="450" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false"/>
       <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
@@ -15,24 +15,26 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
     </Price>
+
     <Deconstruct time="10">
       <Item identifier="plastic" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
+
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" origin="0.5,0.5" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/G3.png" sourcerect="0,0,880,216" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-160,-10" handle2="500,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <!-- reload = 0.19-->
-    <RangedWeapon reload="0.15" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="450,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.15" weapondamagemodifier="0.8" penetration="0.35" holdtrigger="true" barrelpos="450,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/G3 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />      
+      <Sound file="%ModDir%/Weapons Assets/Sounds/G3 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/G3 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/G3 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/G3 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />      
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -40,16 +42,16 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <RequiredItems items="G3magazine" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="G3Magazine" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="G3magazine" hide="false" itempos="4,-10" rotation="-30"/>
+      <Containable items="G3Magazine" hide="false" itempos="4,-10" rotation="-30"/>
     </ItemContainer>  
   </Item>  
 
     <!-- Definiçao de carregador -->
-   <Item name="G3 Magazine" identifier="G3magazine" maxstacksize="4" scale="0.145" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,G3ammo" impactsoundtag="impact_metal_light">
+   <Item name="G3 Magazine" identifier="G3Magazine" maxstacksize="4" scale="0.145" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,G3ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="G3" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
@@ -63,8 +65,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3 Magazine.png" sourcerect="0,0,76,128" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/G3 Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/G3Magazine.png" sourcerect="0,0,76,128" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/G3Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="G3magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
@@ -130,18 +132,18 @@
     </Deconstruct>
 
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" origin="0.5,0.5" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/AK74.png" sourcerect="0,0,536,168" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="-100,-10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
-    <RangedWeapon reload="0.12" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="20,-0" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon reload="0.12" weapondamagemodifier="0.8" penetration="0.35" holdtrigger="true" barrelpos="250,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -172,8 +174,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74 Magazine.png" sourcerect="0,0,76,128" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/AK74 Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/AK74 Magazine.png" sourcerect="0,0,76,128" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/AK74 Magazine.png" depth="0.54" sourcerect="0,0,76,128" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="AK74magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
@@ -207,19 +209,19 @@
       <Item identifier="plastic" />
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" origin="0.5,0.5" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/Chauchat.png" sourcerect="0,0,1024,576" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-130,-10" handle2="570,-5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
-    <RangedWeapon reload="0.19" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="450,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-140,-10" handle2="600,-5" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon reload="0.19" weapondamagemodifier="0.7" penetration="0.25" holdtrigger="true" barrelpos="450,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 4.ogg" type="OnUse" range="3000" selectionmode="Random" />  
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/Chauchat Sound 5.ogg" type="OnUse" range="3000" selectionmode="Random" />    
+      <Sound file="%ModDir%/Weapons Assets/Sounds/Chauchat Sound 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/Chauchat Sound 2.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/Chauchat Sound 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/Chauchat Sound 4.ogg" type="OnUse" range="3000" selectionmode="Random" />  
+      <Sound file="%ModDir%/Weapons Assets/Sounds/Chauchat Sound 5.ogg" type="OnUse" range="3000" selectionmode="Random" />    
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -227,16 +229,16 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <RequiredItems items="Chauchatmagazine" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="chauchatMagazine" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="Chauchatmagazine" hide="false" itempos="4,-10" rotation="-30"/>
+      <Containable items="chauchatMagazine" hide="false" itempos="4,-10" rotation="-30"/>
     </ItemContainer>  
   </Item>  
 
     <!-- Definiçao de carregador -->
-   <Item name="Chauchat Magazine" identifier="Chauchatmagazine" maxstacksize="4" scale="0.135" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Chauchatammo" impactsoundtag="impact_metal_light">
+   <Item name="Chauchat Magazine" identifier="chauchatMagazine" maxstacksize="4" scale="0.135" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Chauchatammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="Chauchat" amount="1" spawnprobability="1"/>
     <PreferredContainer secondary="smallitem" minamount="1" maxamount="2" spawnprobability="0.5"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
@@ -251,8 +253,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat Magazine.png" sourcerect="0,0,216,86" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/Chauchat Magazine.png" depth="0.54" sourcerect="0,0,216,86" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/chauchatMagazine.png" sourcerect="0,0,216,86" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/chauchatMagazine.png" depth="0.54" sourcerect="0,0,216,86" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="Chauchatmagazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
@@ -287,18 +289,18 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" origin="0.5,0.5" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/F1.png" sourcerect="0,0,984,552" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,0" aimpos="40,0" handle1="-120,-35" handle2="250,10" holdangle="-35" msg="ItemMsgPickUpSelect"/>
-    <RangedWeapon reload="0.1" weapondamagemodifier="2" penetration="0.8" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" weapondamagemodifier="1.2" penetration="0.5" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="%Modir%/Barotraumatizing/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
@@ -330,8 +332,8 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
     </Price>
-    <InventoryIcon texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1 Magazine.png" sourcerect="0,0,104,172" />
-    <Sprite texture="%Modir%/Barotraumatizing/Weapons Assets/Textures/F1 Magazine.png" depth="0.54" sourcerect="0,0,104,172" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/F1 Magazine.png" sourcerect="0,0,104,172" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/F1 Magazine.png" depth="0.54" sourcerect="0,0,104,172" origin="0.5,0.5" />
     <Body width="14" height="40" density="20" />
     <ItemContainer hideitems="true" capacity="20" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="F1magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="Rifleround" />
@@ -345,6 +347,128 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
+<Item name="Glock 17" identifier="Glock17" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.055" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
+    <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
+    <PreferredContainer secondary="armcab,weaponholder"/>
+    <Price baseprice="450" minleveldifficulty="30">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <!-- Imagens e sprites-->
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/Glock17.png" sourcerect="0,0,616,408" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/Glock17.png" sourcerect="0,0,616,408" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="25" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="0,0" aimpos="150,5" handle1="-140,-15" handle2="-140,-15" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon reload="0.3" weapondamagemodifier="1" penetration="0.2" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
+      <StatusEffect type="OnUse">
+        <Explosion range="50.0" force="0.3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
+      </StatusEffect>
+      <!--"Use" contained magazine to spawn projectiles.-->
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="Glock17Magazine" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="Glock17Magazine" hide="false" itempos="4,-10" rotation="-30"/>
+    </ItemContainer>  
+  </Item>  
+
+    <!-- Definiçao de carregador -->
+  <Item name="Glock 17 Magazine" identifier="Glock17Magazine" maxstacksize="4" scale="0.040" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,F1ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="F1" amount="1" spawnprobability="1"/>
+    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
+    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
+    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2"/>
+    <PreferredContainer secondary="secarmcab"/>
+    <Price baseprice="50" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/Glock17Magazine.png" sourcerect="0,0,600,600" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/Glock17Magazine.png" depth="0.54" sourcerect="0,0,600,600" origin="0.5,0.5" />
+    <Body width="14" height="40" density="20" />
+    <ItemContainer hideitems="true" capacity="17" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="Glock17Magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="Rifleround" />
+      <!--Spawn a Rifle round on use. Condition -5 -> 20 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-6" disabledeltatime="true"> 
+        <SpawnItem identifiers="Rifleround" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+
+<!-- M9 Beretta --> 
+
+<Item name="M9 Beretta" identifier="M9Beretta" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.055" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
+    <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
+    <PreferredContainer secondary="armcab,weaponholder"/>
+    <Price baseprice="450" minleveldifficulty="30">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false"/>
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <!-- Imagens e sprites-->
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/M9 Beretta.png" sourcerect="0,0,616,408" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/M9 Beretta.png" sourcerect="0,0,616,408" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="25" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="0,0" aimpos="150,5" handle1="-140,-15" handle2="-140,-15" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <RangedWeapon reload="0.3" weapondamagemodifier="1.5" penetration="0.5" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 2.ogg" type="OnUse" range="3000" selectionmode="Random" />        
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 3.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Weapons Assets/Sounds/AK74 Gunshot 4.ogg" type="OnUse" range="3000" selectionmode="Random" />     
+      <StatusEffect type="OnUse">
+        <Explosion range="50.0" force="0.3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="2.0" />
+      </StatusEffect>
+      <!--"Use" contained magazine to spawn projectiles.-->
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="Glock17Magazine" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="Glock17Magazine" hide="false" itempos="4,-10" rotation="-30"/>
+    </ItemContainer>  
+  </Item>
 
 
 
