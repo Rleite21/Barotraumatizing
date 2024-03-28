@@ -115,6 +115,7 @@
             <Item identifier="mudraptorLoin" />
             <Item identifier="mudraptorHides" />
             <Item identifier="mudraptorLeg" />
+            <Item identifier="mudraptorHides" />
             <Item identifier="fat" />
         </Deconstruct>
 
@@ -188,7 +189,7 @@
         </Price>
 
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
-        <InventoryIcon texture="%ModDir%/Supplies Assets/ Food Textures/mudraptorHides.png" sourcerect="0,0,400,144" />
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/mudraptorHides.png" sourcerect="0,0,400,144" />
         <Sprite texture="%ModDir%/Supplies Assets/ Food Textures/mudraptorHides.png" sourcerect="0,0,400,144"  depth="0.6"/>
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
