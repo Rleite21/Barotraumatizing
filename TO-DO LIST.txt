@@ -15,8 +15,6 @@ FirearmsM.xml:
 -FN Scar
 -Steyr AUG
 
-
-
 FireamsS.xml:
 -M9 Beretta
 -Glock 17 (x)
@@ -40,6 +38,9 @@ FireamsL.xml:
 New "afflictions":
 
 -Hunger; (x)
+-Vitamin Defficiency (x)
+-Scurvy (x)
+-Anemia
 -Stress;
 -Improved Radiation Mechanics
 
@@ -47,6 +48,50 @@ New "afflictions":
 ////////////////////////////////    New objects  ////////////////
 
 Foods:
+-Canned Vegetables (x)
+-Canned Peaches (x)
+-Canned Beans (x)
+-Alien Sausage (x)
+-Rice Crackers (x)
+-Pot of Alien Stew (x)
+-Potatoes (x)
+-Grilled Mudraptor (x)
+-Crawler Barbecue Ribs (x)
+-Lucky Cookie (x)
+-Canned SilverTuna (x)
+-Combat Ration (x)
+-Banana
+-Orange
+-Protein Bar
+-Strawberry Jam
 
 (..........)
 
+////////////////////////////   SlaughterHouse Pack //////////////////////
+
+-Industrial Freezer (x)
+-Butcher's Fridge (utilizar a textura Vanilla do "Freezer" que está na pasta Content\Map\Outposts\Art)
+-Stove (x)
+-Butcher's Table (x)
+-Carcass Hoist (x)
+-Larger Carcass Holder
+-Meat Drier
+-Canning Machine
+-Hanging Cabinets
+-Microwaves
+
+/////////////////////////// Alien Drops /////////////////////////////
+
+-Mudraptor Carcass (x)
+-Mudraptor Loin (x)
+-Mudraptor Leg (x)
+-Mudraptor Hides 
+-Crawler Carcass (x)
+-Crawler Ribs (x)
+-Crawler Hides (x)
+-Hammerhead Calvaria 
+-Hammerhead Gold Dust (Golden Hammerhead drop)
+-Tigerthresher Armor 
+-Tigerthresher Tooth
+-Fat (x)
+-Spines (Spinneling)

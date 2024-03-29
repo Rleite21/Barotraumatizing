@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- AVISO: ESTE ITEM TEM O ATRIBUTO SPRITE COLOR-->
+    
+  <Item name="Industrial Freezer" category="Miscellaneous" identifier="industrialFreezer" spritecolor="172,172,172,255" tags="container,food" linkable="true" pickdistance="150" waterproof="true" scale="0.45">
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/industrialFreezer.png" depth="0.84" sourcerect="0,0,268,364" origin="0.5,0.5" />
+    <ItemContainer capacity="35" slotsperrow="7" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.28,0.48" anchor="Center" style="ItemUI" />
+      <Containable items="smallitem,mediumitem,food" excludedidentifiers="mobilecontainer" />
+      <SubContainer capacity="5" maxstacksize="1">
+        <SlotIcon texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
+        <Containable items="mobilecontainer" />
+      </SubContainer>
+    </ItemContainer>
+    <!-- backwards compatibility for older versions in which mobile containers like storage containers were containable in any cabinet -->
+    <Upgrade gameversion="1.1.0.0" campaignsaveonly="true">
+      <ItemContainer>
+        <Containable items="food" />
+        <ClearSubContainerRestrictions />
+      </ItemContainer>
+    </Upgrade>
+  </Item>
+
+  <Item name="Carcass Hoist" category="Miscellaneous" identifier="carcassHoist" spritecolor="255,255,255,255" tags="container,carcass" linkable="true" pickdistance="150" waterproof="true" scale="0.55">
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/carcassHoist.png" depth="0.84" sourcerect="0,0,348,348" origin="0.5,0.5" />
+    <ItemContainer capacity="1" slotsperrow="1" canbeselected="true" hideitems="false" itempos="240,-180" iteminterval="0,0" itemrotation="-95" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.25" anchor="Center" style="ItemUI" />
+      <Containable items="carcass" excludedidentifiers="mobilecontainer" />
+    </ItemContainer>
+    <!-- backwards compatibility for older versions in which mobile containers like storage containers were containable in any cabinet -->
+    <Upgrade gameversion="1.1.0.0" campaignsaveonly="true">
+      <ItemContainer>
+        <Containable items="carcass" />
+      </ItemContainer>
+    </Upgrade>
+  </Item>
+
+
+  <Item
+    name="Butcher's Table"
+    identifier="butcherTable" 
+    SpriteColor="150,150,150"
+    tags="butcher,donttakeitems,dontsellitems"
+    category="Machine"
+		linkable="true"
+    allowedlinks="deconstructor,medcabinet,locker,toxcontainer"
+    scale="0.4"
+    description="Made with stainless steel, a perfect place to prepare fish and meat"
+    damagedbyexplosions="true"
+    explosiondamagemultiplier="0.2">
+    
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+    <Upgrade gameversion="0.10.4.0">
+      <Repairable Msg="ItemMsgRepairWrench"/>
+    </Upgrade>
+
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/butcherTable.png" depth="0.8" sourcerect="0,0,464,204" origin="0.5,0.5"/>
+    <!-- BrokenSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" sourcerect="336,0,336,288" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" /> !-->
+
+    <Fabricator canbeselected = "true" powerconsumption="0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true"/>
+      <StatusEffect type="InWater" target="This" condition="-0.1" />
+    </Fabricator>
+
+    <Deconstructor canbeselected = "true" powerconsumption="0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.25,0.37" minsize="320,266" style="ItemUI" anchor="Center"/>
+      <sound file="Content/Items/Fabricators/Deconstructor.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true"/>
+      <poweronsound file="Content/Items/PowerOnLight3.ogg" range="600" loop="false" />
+      <StatusEffect type="InWater" target="This" condition="-0.5" />
+    </Deconstructor>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredSkill identifier="electrical" level="55" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" force="1.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="equipped" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="2" />
+      </StatusEffect>
+    </Repairable>
+
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true"/>
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true"/>
+  </Item>
+
+  <Item
+    name="Stove"
+    identifier="stove" 
+    SpriteColor="180,180,180"
+    tags="butcher,donttakeitems,dontsellitems"
+    category="Machine"
+		linkable="true"
+    allowedlinks="deconstructor,medcabinet,locker,toxcontainer"
+    scale="0.15"
+    description="A must have for any kitchen"
+    damagedbyexplosions="true"
+    explosiondamagemultiplier="0.2">
+    
+    <Upgrade gameversion="0.10.0.0" scale="*0.15" />
+    <Upgrade gameversion="0.10.4.0">
+      <Repairable Msg="ItemMsgRepairWrench"/>
+    </Upgrade>
+
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/stove.png" depth="0.8" sourcerect="0,0,504,584" origin="0.5,0.5"/>
+    <!-- BrokenSprite texture="Content/Items/Fabricators/FabricatorsAndDeconstructors.png" sourcerect="336,0,336,288" origin="0.5,0.5" depth="0.8" maxcondition="80" fadein="true" /> !-->
+
+    <Fabricator canbeselected = "true" powerconsumption="15" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true"/>
+      <StatusEffect type="InWater" target="This" condition="-0.1" />
+    </Fabricator>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredSkill identifier="electrical" level="70" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" force="1.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="70" />
+      <RequiredItem items="wrench" type="equipped" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="2" />
+      </StatusEffect>
+    </Repairable>
+
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true"/>
+    <ItemContainer capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true"/>
+  </Item>
+
+</Items>

@@ -5,7 +5,7 @@ More Afflictions To Be Added Before Release:
     -Affliction Vitamin Defficiency (Causes fatigue, worsened vision if above 35);
     -Affliction Scurvy (If Vitamin Defficiency > 65);
     -Affliction Anemia (If Vitamin Defficiency > 85);
-    
+    -Parasite Infection
     
     
     

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item  name="Crawler Carcass" identifier="crawlerCarcass" category="Alien" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="carcass" description="Gross ass thing" useinhealthinterface="true" scale="0.35">
+        <PreferredContainer primary="medcab" minamount="1" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="250" minavailable="1">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="10,0" handle2="-10,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+        <InventoryIcon texture="%ModDir%/Creatures/Crawler/crawlerCarcass.png" sourcerect="0,0,468,260"/>
+        <Sprite texture="%ModDir%/Creatures/Crawler/crawlerCarcass.png" sourcerect="0,0,468,260" depth="0.6" origin="0.5,0.5"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+
+        <Deconstruct time="10">
+            <Item identifier="crawlerRibs" />
+            <Item identifier="crawlerRibs" />
+            <Item identifier="crawlerHides" />
+            <Item identifier="fat" />
+        </Deconstruct>
+    </Item>
+
+    <Item  name="Crawler Ribs" identifier="crawlerRibs" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien,smallitem,food" description="Raw ribs ready for barbecue" scale="0.3">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="70" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/crawlerRibs.png" sourcerect="0,0,140,140"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/crawlerRibs.png" sourcerect="0,0,140,140" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+        
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> 
+            <SuitableTreatment type="hunger" suitability="10" />
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="35" />   
+                <Affliction identifier="foodpoisoning" amount="55" />                
+            </StatusEffect>
+        </MeleeWeapon>
+    </Item>
+
+    <Item  name="Crawler Hides" identifier="crawlerHides" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Prized skins for textile production" useinhealthinterface="true" scale="0.15">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="100" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/crawlerHides.png" sourcerect="0,0,800,640"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/crawlerHides.png" sourcerect="0,0,800,640" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+    <Item  name="Alien Fat" identifier="fat" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="" useinhealthinterface="true" scale="0.05">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="25" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/fat.png" sourcerect="0,0,324,524"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/fat.png" sourcerect="0,0,324,524" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+    
+    
+    <Item  name="Mudraptor Carcass" identifier="mudraptorCarcass" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="carcass" description="WARNING: Keep away from vegetarians" useinhealthinterface="true" scale="0.18">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="300" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <Deconstruct time="10">
+            <Item identifier="mudraptorLoin" />
+            <Item identifier="mudraptorLoin" />
+            <Item identifier="mudraptorHides" />
+            <Item identifier="mudraptorLeg" />
+            <Item identifier="mudraptorHides" />
+            <Item identifier="fat" />
+        </Deconstruct>
+
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" holdangle="90" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+        <InventoryIcon texture="%ModDir%/Creatures/Mudraptor/mudraptorCarcass.png" sourcerect="0,0,920,504"/>
+        <Sprite texture="%ModDir%/Creatures/Mudraptor/mudraptorCarcass.png" sourcerect="0,0,920,504" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+    <Item  name="Mudraptor Loin" identifier="mudraptorLoin" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien" description="Awful looking but amongst the most succulent meats in Europa" scale="0.18">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="50" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLoin.png" sourcerect="0,0,400,180"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLoin.png" sourcerect="0,0,400,180" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+        
+        
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> 
+            <SuitableTreatment type="hunger" suitability="10" />
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="40" />   
+                <Affliction identifier="foodpoisoning" amount="25" />         
+            </StatusEffect>
+        </MeleeWeapon>
+    </Item>
+
+    <Item  name="Mudraptor Leg" identifier="mudraptorLeg" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="alien" description="A lil leggie" scale="0.18">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="30" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLeg.png" sourcerect="0,0,300,600"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLeg.png" sourcerect="0,0,300,600" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+            
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+    </Item>
+
+    <Item  name="Mudraptor Hides" identifier="mudraptorHides" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Prized skins for textile production" useinhealthinterface="true" scale="0.15">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="150" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/mudraptorHides.png" sourcerect="0,0,400,144" />
+        <Sprite texture="%ModDir%/Supplies Assets/ Food Textures/mudraptorHides.png" sourcerect="0,0,400,144"  depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+
+
+</Items>

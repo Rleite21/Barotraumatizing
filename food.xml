@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
     
-    <Item  name="Baked Beans" identifier="bakedBeans" category="Medical" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="smallitem,medical" description="A delicious simple meal" useinhealthinterface="true" scale="0.15">
+    <Item  name="Baked Beans" identifier="bakedBeans" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Iconic beans from BEINZ" useinhealthinterface="true" scale="0.15">
         <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
         <PreferredContainer secondary="medcontainer"/>
 
-        <Price baseprice="25" minavailable="4">
+        <Price baseprice="50" minavailable="4">
             <Price storeidentifier="merchantoutpost" sold="true" />
             <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
             <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
@@ -16,10 +16,10 @@
         </Price>
 
         <SuitableTreatment type="hunger" suitability="10" />
-
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
         <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
-            <ReduceAffliction identifier="hunger" amount="50" />
+            <ReduceAffliction identifier="hunger" amount="45" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="25" />
         </StatusEffect>
 
         <StatusEffect type="OnUse" target="This">
@@ -39,5 +39,370 @@
         <Sprite texture="%ModDir%/Supplies Assets/Food Textures/bakedBeans.png" sourcerect="0,0,142,142" depth="0.6"/>
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     </Item>
+
+    <Item  name="Canned Vegetables" identifier="cannedVegetables" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="An extremely bland 'meal'" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="35" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <SuitableTreatment type="hunger" suitability="10" />
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+            <ReduceAffliction identifier="hunger" amount="35" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="40" />
+        </StatusEffect>
+
+        <StatusEffect type="OnUse" target="This">
+            <Remove/>
+        </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="medicalfabricator" requiredtime="15">
+            <RequiredSkill identifier="medical" level="20" />
+            <RequiredItem identifier="creepingorange" amount="3" />
+        </Fabricate>
+        <Deconstruct time="30">
+            <Item identifier="creepingorange" amount="2" />
+        </Deconstruct>
+   
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/cannedVegetables.png" sourcerect="0,0,200,200"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/cannedVegetables.png" sourcerect="0,0,200,200" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
  
+    <Item  name="Canned Peaches" identifier="cannedPeaches" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="How do they grow these?" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="30" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <SuitableTreatment type="hunger" suitability="10" />
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+            <ReduceAffliction identifier="hunger" amount="30" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="70" />
+        </StatusEffect>
+
+        <StatusEffect type="OnUse" target="This">
+            <Remove/>
+        </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="medicalfabricator" requiredtime="15">
+            <RequiredSkill identifier="medical" level="20" />
+            <RequiredItem identifier="creepingorange" amount="3" />
+        </Fabricate>
+        <Deconstruct time="30">
+            <Item identifier="creepingorange" amount="2" />
+        </Deconstruct>
+   
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/cannedPeaches.png" sourcerect="0,0,200,200"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/cannedPeaches.png" sourcerect="0,0,200,200" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+    <Item  name="Alien Sausage" identifier="alienSausage" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="70% meat! We think" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="75" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <SuitableTreatment type="hunger" suitability="100" />
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+            <ReduceAffliction identifier="hunger" amount="60" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="10" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+            <Remove/>
+        </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="butcherTable" requiredtime="10">     
+            <RequiredItem identifier="crawlerRibs" amount="1" />
+            <RequiredItem identifier="fat" amount="1" />
+        </Fabricate>
+   
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/alienSausage.png" sourcerect="0,0,260,80"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/alienSausage.png" sourcerect="0,0,260,80" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+    <Item  name="Rice Crackers" identifier="riceCrackers" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Does anyone even like these?!" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="15" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <SuitableTreatment type="hunger" suitability="100" />
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+            <ReduceAffliction identifier="hunger" amount="15" />
+            <ReduceAffliction identifier="vitaminDefficiency" amount="5" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+            <Remove/>
+        </StatusEffect>
+        </MeleeWeapon>
+
+        <Deconstruct time="30">
+            <Item identifier="creepingorange" amount="2" />
+        </Deconstruct>
+   
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/riceCrackers.png" sourcerect="0,0,200,200"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/riceCrackers.png" sourcerect="0,0,200,200" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    </Item>
+
+    <Item  name="Bag of Potatotes" identifier="potatoes" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="A bag of the most peasant-y vegetables" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="15" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true"> </MeleeWeapon>
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/sack.png" sourcerect="0,0,400,500"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/sack.png" sourcerect="0,0,400,500" depth="0.6"/>
+        <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />     
+    </Item>
+
+    <Item  name="Pot of Alien Stew" identifier="stew" category="Miscellaneous" maxstacksize="14" cargocontaineridentifier="mediccrate" Tags="food" description="A traditional Europan dish, just like grandma used to make" useinhealthinterface="true" scale="0.2">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="125" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+    	
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/cookingPot.png" sourcerect="0,0,200,156"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/cookingPot.png" sourcerect="0,0,200,156" depth="0.6"/>
+
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">        
+            <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+            <SuitableTreatment type="hunger" suitability="100" />    
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="100" />
+                <ReduceAffliction identifier="vitaminDefficiency" amount="50" />
+                </StatusEffect>
+            <StatusEffect type="OnUse" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="stove" requiredtime="20">     
+            <RequiredItem identifier="crawlerRibs" amount="1" />
+            <RequiredItem identifier="bakedBeans" amount="1" />
+            <RequiredItem identifier="potatoes" amount="2" />
+        </Fabricate>
+
+        <Fabricate suitablefabricators="stove" requiredtime="20">     
+            <RequiredItem identifier="mudraptorLoin" amount="1" />
+            <RequiredItem identifier="bakedBeans" amount="1" />
+            <RequiredItem identifier="potatoes" amount="2" />
+        </Fabricate>
+    </Item>
+
+    <Item  name="Grilled Mudraptor" identifier="grilledMeat" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Juicy steak" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="55" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+        
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLoin.png" sourcerect="0,0,400,180"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/mudraptorLoin.png" sourcerect="0,0,400,180" depth="0.6"/>
+        
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">         
+            <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+            <SuitableTreatment type="hunger" suitability="100" />       
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="70" />
+                </StatusEffect>
+            <StatusEffect type="OnUse" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="stove" requiredtime="20">     
+            <RequiredItem identifier="mudraptorLoin" amount="1" />           
+        </Fabricate>
+    </Item>
+
+    <Item  name="Crawler Barbecue Ribs" identifier="crawlerBarbecue" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="Not as good as the ones from the HardRock Cafe" useinhealthinterface="true" scale="0.2">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="55" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+        
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/crawlerRibs.png" sourcerect="0,0,140,140"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/crawlerRibs.png" sourcerect="0,0,140,140" depth="0.6"/>
+        
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">         
+            <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+            <SuitableTreatment type="hunger" suitability="100" />       
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="70" />
+                <ReduceAffliction identifier="vitaminDefficiency" amount="20" />
+                </StatusEffect>
+            <StatusEffect type="OnUse" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+
+        <Fabricate suitablefabricators="stove" requiredtime="20">     
+            <RequiredItem identifier="crawlerRibs" amount="1" />           
+        </Fabricate>
+    </Item>
+
+    <Item  name="Lucky Cookie" identifier="cookie" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="" useinhealthinterface="true" scale="0.1">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="15" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+        
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/cookie.png" sourcerect="0,0,96,96"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/cookie.png" sourcerect="0,0,96,96" depth="0.6"/>
+        
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">         
+            <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+            <SuitableTreatment type="hunger" suitability="100" />       
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="20" />
+                </StatusEffect>
+            <StatusEffect type="OnUse" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+    </Item>
+
+    <Item  name="Silver Tuna" identifier="silverTuna" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="" useinhealthinterface="true" scale="0.05">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="80" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+        
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/tunaCan.png" sourcerect="0,0,284,164"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/tunaCan.png" sourcerect="0,0,284,164" depth="0.6"/>
+        
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">         
+            <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+            <SuitableTreatment type="hunger" suitability="100" />       
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="80" />
+                <ReduceAffliction identifier="vitaminDefficiency" amount="50" />
+                </StatusEffect>
+            <StatusEffect type="OnUse" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+    </Item>
+
+    <Item  name="Combat Ration" identifier="combatRation" category="Miscellaneous" maxstacksize="32" cargocontaineridentifier="mediccrate" Tags="food" description="" useinhealthinterface="true" scale="0.4">
+        <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
+        <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.1" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+        <PreferredContainer secondary="medcontainer"/>
+
+        <Price baseprice="120" minavailable="4">
+            <Price storeidentifier="merchantoutpost" sold="true" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantresearch" multiplier="0.9" sold="true" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="true" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" sold="true" />
+        </Price>
+        
+        <InventoryIcon texture="%ModDir%/Supplies Assets/Food Textures/combatRation.png" sourcerect="0,0,100,100"/>
+        <Sprite texture="%ModDir%/Supplies Assets/Food Textures/combatRation.png" sourcerect="0,0,100,100" depth="0.6"/>
+        
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">         
+            <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+            <SuitableTreatment type="hunger" suitability="100" />       
+            <StatusEffect tags="medical" type="OnUse" target="UseTarget" disabledeltatime="true" allowwhenbroken="true">
+                <ReduceAffliction identifier="hunger" amount="100" />
+                <ReduceAffliction identifier="vitaminDefficiency" amount="80" />
+                </StatusEffect>
+            <StatusEffect type="OnUse" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+    </Item>
+
 </Items>

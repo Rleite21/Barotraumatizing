@@ -7,8 +7,8 @@
       <Effect minstrength="45" maxstrength="75" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
         <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
       </Effect>
-      <Effect minstrength="75" maxstrength="95" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="25" minchromaticaberration="0.0" maxchromaticaberration="5.0">
-        <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
+      <Effect minstrength="75" maxstrength="95" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="15" minchromaticaberration="0.0" maxchromaticaberration="5.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true" />
       </Effect>
       <Effect minstrength="95" maxstrength="100" strengthchange="0" minvitalitydecrease="50" maxvitalitydecrease="70" minchromaticaberration="10.0" maxchromaticaberration="10.0" minscreenblur="0.0" maxscreenblur="10.0">
         <StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true" />
@@ -32,4 +32,51 @@
       <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,200,200" color="10,193,114,255" origin="0,0" />
     </Affliction>
 
+    <Affliction name="Vitamin Defficiency" identifier="vitaminDefficiency" description="A varied diet is important buddy..." limbspecific="false" indicatorlimb="" maxstrength="100" showiconthreshold="0">
+      <Effect minstrength="0" maxstrength="40" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0"> </Effect>      
+      <Effect minstrength="40" maxstrength="75" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
+        <StatusEffect target="Character" interval="2" disabledeltatime="true" SpeedMultiplier="0.8" >
+          <Affliction identifier="scurvy" amount="0.4" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="75" maxstrength="100" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
+        <StatusEffect target="Character" interval="2" disabledeltatime="true" SpeedMultiplier="0.8" >
+          <Affliction identifier="scurvy" amount="0.4" />
+          <Affliction identifier="anemia" amount="0.2" />
+        </StatusEffect>
+      </Effect>
+      
+    </Affliction>
+
+    <Affliction name="Scurvy" identifier="scurvy" description="Bloody gums... Eat an orange, quick!" limbspecific="false" indicatorlimb="Head" maxstrength="100" showiconthreshold="15">
+      <Effect minstrength="0" maxstrength="30" strengthchange="-0.4" minvitalitydecrease="0" maxvitalitydecrease="5">  </Effect>
+      <Effect minstrength="30" maxstrength="50" strengthchange="-0.5" minvitalitydecrease="1" maxvitalitydecrease="10">
+        <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"> </StatusEffect>
+      </Effect>
+      <Effect minstrength="50" maxstrength="80" strengthchange="-0.7" minvitalitydecrease="2" maxvitalitydecrease="15">
+        <StatusEffect target="Character" targetlimbs="Head" SpeedMultiplier="0.8" setvalue="true">
+          <Affliction identifier="bleeding" strength="0.4"/>
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="80" maxstrength="100" strengthchange="0.1"  minvitalitydecrease="5" maxvitalitydecrease="20" minchromaticaberration="1.0" maxchromaticaberration="5.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
+          <Affliction identifier="bleeding" targetlimb="Head" strength="10" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Afflictions/Textures/scurvy.png" sourcerect="0,0,200,200" origin="0,0"/>
+    </Affliction>
+
+     <Affliction name="Anemia" identifier="anemia" description="Feeling increasingly tired and weak" limbspecific="false" indicatorlimb="" maxstrength="100" iconcolors="205,227,125,255;151,186,76,255;81,128,41,255">
+      <Effect minstrength="0" maxstrength="75" strengthchange="-0.7" minvitalitydecrease="0" maxvitalitydecrease="35">
+        <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"> </StatusEffect>
+      </Effect>
+      <Effect minstrength="75" maxstrength="100" strengthchange="-0.4" minvitalitydecrease="20" maxvitalitydecrease="45" minchromaticaberration="1.0" maxchromaticaberration="5.0">
+        <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true"> </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,480,480" origin="500,500"/>
+    </Affliction>
+
+
+
+    
 </Afflictions>
