@@ -471,7 +471,7 @@
 
     <!-- Definiçao de carregador -->
   <Item name="Glock 17 Magazine" identifier="Glock17Magazine" maxstacksize="4" scale="0.040" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,F1ammo" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="F1" amount="1" spawnprobability="1"/>
+    <PreferredContainer primary="Glock17" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2"/>
@@ -502,7 +502,7 @@
 
 <!-- M9 Beretta --> 
 
-<Item name="M9 Beretta" identifier="M9Beretta" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.055" impactsoundtag="impact_metal_light">
+<Item name="M9 Beretta" identifier="M9Beretta" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.2" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
@@ -520,10 +520,10 @@
       <Item identifier="titaniumaluminiumalloy" />
     </Deconstruct>
     <!-- Imagens e sprites-->
-    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/M9 Beretta.png" sourcerect="0,0,616,408" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons Assets/Textures/M9 Beretta.png" sourcerect="0,0,616,408" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/M9.png" sourcerect="0,0,156,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/M9.png" sourcerect="0,0,156,100" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="25" />
-    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="0,0" aimpos="150,5" handle1="-140,-15" handle2="-140,-15" holdangle="-35" msg="ItemMsgPickUpSelect"/>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="0,0" aimpos="150,5" handle1="-50,0" holdangle="-35" msg="ItemMsgPickUpSelect"/>
     <RangedWeapon reload="0.3" weapondamagemodifier="1.5" penetration="0.5" holdtrigger="true" barrelpos="325,0" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" /> 
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -539,14 +539,41 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <RequiredItems items="Glock17Magazine" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="M9Magazine" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="Glock17Magazine" hide="false" itempos="4,-10" rotation="-30"/>
+      <Containable items="M9Magazine" hide="false" itempos="4,-10" rotation="-30"/>
     </ItemContainer>  
   </Item>
 
-
+  <Item name="M9 Magazine" identifier="M9Magazine" maxstacksize="4" scale="0.15" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,F1ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="M9Beretta" amount="1" spawnprobability="1"/>
+    <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
+    <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
+    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2"/>
+    <PreferredContainer secondary="secarmcab"/>
+    <Price baseprice="50" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false"/>
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Weapons Assets/Textures/M9Magazine.png" sourcerect="0,0,100,100" />
+    <Sprite texture="%ModDir%/Weapons Assets/Textures/M9Magazine.png" depth="0.54" sourcerect="0,0,100,100" origin="0.5,0.5" />
+    <Body width="14" height="40" density="20" />
+    <ItemContainer hideitems="true" capacity="17" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="Glock17Magazine" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="Rifleround" />
+      <!--Spawn a Rifle round on use. Condition -5 -> 20 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-6" disabledeltatime="true"> 
+        <SpawnItem identifiers="Rifleround" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
 
 </Items>
