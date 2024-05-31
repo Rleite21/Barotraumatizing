@@ -2,7 +2,7 @@
 <Items>
     <!--  AUMENTAR TAMANHO DO ICONE DE INVENTARIO --> 
 
-  <Item name="G3" identifier="G3" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.145" impactsoundtag="impact_metal_light">
+  <Item name="G3" identifier="G3" category="Weapon" maxstacksize="1" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.145" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
@@ -49,7 +49,7 @@
   </Item>  
 
     <!-- Definiçao de carregador -->
-   <Item name="G3 Magazine" identifier="G3magazine" maxstacksize="4" scale="0.145" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,G3ammo" impactsoundtag="impact_metal_light">
+   <Item name="G3 Magazine" identifier="G3magazine" maxstacksize="5" scale="0.145" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,G3ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="G3" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
@@ -111,7 +111,7 @@
 
 <!-- AK74 -->
 <!-- O sprite do icone esta pequeno in-game-->
-<Item name="AK74" identifier="AK74" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.225" impactsoundtag="impact_metal_light">
+<Item name="AK74" identifier="AK74" maxstacksize="1" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.225" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
@@ -158,7 +158,7 @@
   </Item>  
 
     <!-- Definiçao de carregador -->
-   <Item name="AK74 Magazine" identifier="AK74magazine" maxstacksize="4" scale="0.225" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,AK74ammo" impactsoundtag="impact_metal_light">
+   <Item name="AK74 Magazine" identifier="AK74magazine" maxstacksize="5" scale="0.225" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,AK74ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="AK74" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
@@ -190,7 +190,7 @@
 
 <!-- Chauchat-->
 
-<Item name="Chauchat" identifier="Chauchat" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.125" impactsoundtag="impact_metal_light">
+<Item name="Chauchat" identifier="Chauchat" maxstacksize="1" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.125" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
@@ -236,7 +236,7 @@
   </Item>  
 
     <!-- Definiçao de carregador -->
-   <Item name="Chauchat Magazine" identifier="Chauchatmagazine" maxstacksize="4" scale="0.135" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Chauchatammo" impactsoundtag="impact_metal_light">
+   <Item name="Chauchat Magazine" identifier="Chauchatmagazine" maxstacksize="5" scale="0.135" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,Chauchatammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="Chauchat" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
@@ -267,7 +267,7 @@
 
 <!-- F1 FAMAS-->
 
-<Item name="Famas" identifier="F1" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.095" impactsoundtag="impact_metal_light">
+<Item name="Famas" identifier="F1" maxstacksize="1" category="Weapon" cargocontaineridentifier="metalcrate" tags="weapon,gun,gunsmith,mountableweapon" Scale="0.095" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="false"/>
     <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25"/>
@@ -313,7 +313,7 @@
   </Item>  
 
     <!-- Definiçao de carregador -->
-   <Item name="Famas Magazine" identifier="F1magazine" maxstacksize="4" scale="0.095" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,F1ammo" impactsoundtag="impact_metal_light">
+   <Item name="Famas Magazine" identifier="F1magazine" maxstacksize="5" scale="0.095" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,F1ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="F1" amount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" amount="1" spawnprobability="1" notcampaign="true"/>
     <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.5"/>
