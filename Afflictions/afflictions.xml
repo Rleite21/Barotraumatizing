@@ -32,7 +32,7 @@
       <icon texture="%ModDir%/Afflictions/Textures/hunger.png" sourcerect="0,0,200,200" color="10,193,114,255" origin="0,0" />
     </Affliction>
 
-    <Affliction name="Vitamin Defficiency" identifier="vitaminDefficiency" description="A varied diet is important buddy..." limbspecific="false" indicatorlimb="" maxstrength="100" showiconthreshold="0">
+    <Affliction name="Vitamin Defficiency" identifier="vitaminDefficiency" description="A varied diet is important buddy..." limbspecific="false" indicatorlimb="" maxstrength="100" showiconthreshold="100">
       <Effect minstrength="0" maxstrength="40" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0"> </Effect>      
       <Effect minstrength="40" maxstrength="75" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
         <StatusEffect target="Character" interval="2" disabledeltatime="true" SpeedMultiplier="0.8" >
@@ -42,7 +42,7 @@
       <Effect minstrength="75" maxstrength="100" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
         <StatusEffect target="Character" interval="2" disabledeltatime="true" SpeedMultiplier="0.8" >
           <Affliction identifier="scurvy" amount="0.4" />
-          <Affliction identifier="anemia" amount="0.2" />
+          <Affliction identifier="anemia" amount="1.0" />
         </StatusEffect>
       </Effect>
       

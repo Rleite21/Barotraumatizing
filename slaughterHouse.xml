@@ -2,7 +2,7 @@
 <Items>
   <!-- AVISO: ESTE ITEM TEM O ATRIBUTO SPRITE COLOR-->
     
-  <Item name="Industrial Freezer" category="Miscellaneous" identifier="industrialFreezer" spritecolor="172,172,172,255" tags="container,food" linkable="true" pickdistance="150" waterproof="true" scale="0.45">
+  <Item name="Industrial Freezer" category="Miscellaneous" identifier="industrialFreezer" spritecolor="140,140,140,255" tags="container,food" linkable="true" pickdistance="150" waterproof="true" scale="0.45">
     <Sprite texture="%ModDir%/Slaughterhouse Assets/Textures/industrialFreezer.png" depth="0.84" sourcerect="0,0,268,364" origin="0.5,0.5" />
     <ItemContainer capacity="35" slotsperrow="7" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.28,0.48" anchor="Center" style="ItemUI" />
@@ -102,7 +102,7 @@
   <Item
     name="Stove"
     identifier="stove" 
-    SpriteColor="180,180,180"
+    SpriteColor="140,140,140"
     tags="butcher,donttakeitems,dontsellitems"
     category="Machine"
 		linkable="true"
