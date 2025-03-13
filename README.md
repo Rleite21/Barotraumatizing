@@ -14,7 +14,7 @@ We also intend to add and develop a more expansive narrative and lore and many o
 
 ----------------------------------------------------- INSTALL GUIDE ------------------------------------------------
 
-The easiest way to run Barotraumatizing is by downloading it through the steam workshop (perhaps not available yet), but you can also download the files and add them to the folder "LocalMods", that you can find within the Barotrauma game files.
+The easiest way to run Barotraumatizing is by downloading it through the steam workshop, but you can also download the files and add them to the folder "LocalMods", that you can find within the Barotrauma game files.
 
 After downloading the mod all you have to do is go to the mod menu in-game and enable Barotraumatizing.
 
