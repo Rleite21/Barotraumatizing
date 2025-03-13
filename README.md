@@ -18,4 +18,4 @@ The easiest way to run Barotraumatizing is by downloading it through the steam w
 
 After downloading the mod all you have to do is go to the mod menu in-game and enable Barotraumatizing.
 
-DISCLAIMER: Barotraumatizing might collide and be incompatible with other mods or even certain versions of the actual game. If you happen to run into any bugs, crashes and issues, please let us know through our steam forums! :)
+DISCLAIMER: Barotraumatizing might collide and be incompatible with other mods or even certain versions of the game. If you happen to run into any bugs, crashes and issues, please let us know through our steam forums! :)
